@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- ===( CODE AASHU )=== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
+        integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>CODE AASHU | Alphine Green</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="index.html" class="logo"><i class="ri-playstation-fill"></i></a>
+            <a href="#" class="btn">BUY NOW</a>
+        </nav>
+        <section class="container">
+            <span class="left">SPECIAL EDITION</span>
+            <span class="right">&copy; 2024 AASHU INTERACTIVE ENTERTAINMENT LLC</span>
+            <h1>ALPINE <br> GREEN</h1>
+            <h3>DUALSHOCK&#9415;4 <br>
+                Wireless Controller</h3>
+            <p>Refresh your set up this spring with this contrasting green
+                & white wireless controller. Play in style with the new Alpine
+                Green edition of the DUALSHOCK34 wireless controller.</p>    
+            <img src="images/controller-1.png" alt="">    
+        </section>
+        <footer>
+            <span>01 <div class="bar"></div> 03</span>
+            <div class="options">
+                <img src="images/controller-1.png" alt="" class="active">
+                <img src="images/controller-2.png" alt="">
+                <img src="images/controller-3.png" alt="">
+                <div class="video">
+                    <img src="images/controller-1.png" alt="">
+                    <div class="play">
+                        <i class="ri-play-circle-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from("h1", {
+            y: 100,
+            opacity: 0,
+            duration: 1
+        })
+        gsap.from("section img", {
+            x: 50,
+            opacity: 0,
+            duration: 0.8,
+            delay: 0.2
+        })
+        gsap.from("footer", {
+            y: 100,
+            opacity: 0,
+            delay: 0.2
+        })
+        gsap.from("footer span, .options img, .video", {
+            x: -200,
+            opacity: 0,
+            stagger: 0.2,
+            delay: 0.4
+        })
+    </script>
+</body>
+
+</html>

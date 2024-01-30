@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* ===( CODE AASHU )=== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background: url("images/bg.jpg") no-repeat;
+    background-position-y: 40%;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+main::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, #268885e5 45%, #268885b3, #2688855b);
+}
+
+.container, nav, footer{
+    position: relative;
+    z-index: 10;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+}
+
+nav .logo{
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+nav .btn{
+    padding: 20px 30px;
+    background: #fff;
+    color: #0B7270;
+    font-size: 14px;
+    font-weight: bolder;
+    word-spacing: 5px;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.1);
+}
+
+.container{
+    position: relative;
+    padding: 20px 50px;
+}
+
+.container h1{
+    font-size: 120px;
+    line-height: 0.9;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    margin-left: 100px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+}
+
+.container h3{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    word-spacing: 3px;
+}
+
+.container p{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 30%;
+}
+
+.container img{
+    position: absolute;
+    top: 2%;
+    right: 15%;
+    rotate: 16deg;
+    width: 40vw;
+    filter: drop-shadow(-10px -5px 10px #1138355c);
+}
+
+
+.container span{
+    position: absolute;
+    writing-mode: vertical-rl;
+    rotate: -180deg;
+    top: 80px;
+    opacity: 0.5;
+    word-spacing: 5px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.container span.right{
+    right: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    letter-spacing: initial;
+    word-spacing: normal;
+    rotate: 0deg;
+    bottom: 20px;
+    top: auto;
+}
+
+footer{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+footer img{
+    width: 140px;
+    height: 100px;
+    object-fit: contain;
+}
+
+footer span{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0B7270;
+    font-size: 20px;
+    gap: 10px;
+}
+
+footer span .bar{
+    width: 25%;
+    height: 3px;
+    background: #0B7270;
+}
+
+footer .options{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 20px;
+    gap: 50px;
+}
+
+footer .options img{
+    opacity: 0.5;
+}
+
+footer .options img.active{
+    opacity: 1;
+}
+
+footer .video{
+    height: 100px;
+    width: 300px;
+    overflow: hidden;
+    background: #0B7270;
+    margin-block: 20px;
+    position: relative;
+}
+
+footer .video img{
+    scale: 2;
+    rotate: -15deg;
+    transform: translate(35%, 20%);
+    opacity: 0.3;
+}
+
+footer .play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    height: 30px;
+    width: 30px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    outline: 15px solid rgba(255,255,255,0.15);
+}
